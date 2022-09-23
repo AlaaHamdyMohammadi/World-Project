@@ -1,0 +1,685 @@
+
+
+/* div.image{
+    background-image: url(../imgs/gallery-01.png);
+    background-size: 100% 100%;
+    width: 400px;
+    height: 400px;
+    opacity: 0.5;
+} */
+
+/* .overlay{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.353);
+    text-transform: uppercase;
+    text-indent : بيسيب مسافة قبل بداية السطر
+    text-indent: 50px;
+    word-spacing: 5px;
+    letter-spacing: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+div{
+    background-color: aqua;
+    padding: 10px 0;
+}
+
+p{
+    background-color: red;
+} */
+/* 
+
++(adjusive) => بقوله العنصر اللي بعد الديف مباشرة
+~(subling) => بقوله كل العناصر اللي بعد الديف
+
+!important => لو عايزة امنع حدوث priority
+> => دي عشان مثلا عايزة اعمل سلكت على حاجات من نوع واحد بعن العنصر علطول
+
+
+*/
+/* div ~p{
+    background-color: yellow;
+} */
+
+/* div p{
+    background-color: blue;
+} */
+
+
+
+/* global styling */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Global Classes */
+.d-flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+.fs-11{
+    font-size: 11px;
+}
+
+p span:first-of-type:hover{
+    color: blue;
+}
+p span:last-of-type:hover{
+    color: blue;
+}
+
+.pad-lr-35{
+    padding-right: 35px;
+    padding-left: 35px;
+}
+.pad-tb-15{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.border-b-gray{
+    border-bottom: 2px solid #eee;
+}
+
+.w-40{
+    width: 40%;
+}
+.w-60{
+    width: 60%;
+}
+.w-100{
+    width: 100%;
+}
+
+.shadow1{
+    box-shadow: 0px 2px 8px lightgray;
+}
+
+div.container{
+    width: 80%;
+    margin: 50px auto;
+
+}
+
+/* Start Header */
+
+header.start{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    color: white;
+    padding: 15px 15px;
+    justify-content: space-between;
+}
+
+header ul{
+    width: 50%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+header ul li a{
+    color: gray;
+}
+
+header ul li:hover a{
+    color: white;
+    background-color: transparent;
+}
+
+header ul li a .triangle{
+    border: 5px solid;
+    border-top-color: white;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    display: inline-block;
+    
+}
+
+/* End Header */
+
+/* Start Background */
+
+.background{
+    background-image: url(../imgs/xbg1.jpg.pagespeed.ic.5jRX7mD2W5.webp);
+    background-size: 100% 100%;
+    color: white;
+}
+
+.background .overlay{
+    background-color: rgba(0, 0, 0, 0.395);
+    height: 550px;
+    padding: 0 10%;
+}
+
+.background .overlay .All{
+    align-items: flex-end;
+    height: 500px;
+}
+
+.background .num{
+    border: 6px solid blue;
+    padding: 12px 20px;
+    /* margin-bottom: 50px; */
+    margin-right: 20px;
+    border-radius: 50%;
+    border-left-color: gray;
+}
+
+.icon-up{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: gray;
+    position: fixed;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3; 
+    bottom: 60px;
+    right: 60px;
+}
+.icon-up i{
+    color: gray;
+}
+.icon-up:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+/* .icon-up:hover i{
+    color: #fff;
+} */
+
+/* End Background */
+
+
+
+ section.firstSection{
+    width: 60%;
+    /* height: 500px; */
+}
+ aside.aside{
+    width: 35%;
+    /* height: 500px; */
+}
+
+/* Start Nav1 */
+div.navOne{
+    border-bottom: 2px solid #eee;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    /* position: relative; */
+}
+
+
+div.navOne ul{
+    width: 78%;
+}
+
+/* div.navOne::before{
+    content: " ";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: blue;
+} */
+
+div.navOne ul li{
+    color: gray;
+}
+div.navOne ul li:first-of-type{
+    position: relative;
+}
+div.navOne ul li:first-of-type::before{
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: blue;
+    bottom: -12px;
+}
+
+div.navOne ul li:hover{
+    color: black;
+}
+
+.firstSection .navOne .triangle2{
+    border: 5px solid;
+    border-top-color: gray;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    display: inline-block;
+    
+}
+
+/* End Nav1 */
+
+
+/* Start Cards1 */
+
+.cardOne, .cardTwo{
+    width: 45%;
+}
+
+div.cardOne{
+    position: relative;
+
+}
+
+div.cardOne img{
+    width: 110%;
+    height: 50%;
+    box-shadow: 1px 1px 3px grey;
+
+}
+
+div.cardOne button{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 3px 18px;
+    border: 0;
+    background-color: white;
+    color: blue;
+}
+
+div.cardOne button:hover{
+    background-color: blue;
+    color: white;
+}
+
+div.cardOne .cardBody{
+    width: 319px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px grey;
+}
+
+div.cardOne .cardBody p:first-of-type{
+    margin: 10px 0 ;
+    color: gray;
+}
+
+div.cardOne .cardBody p:last-of-type{
+    color: gray;
+}
+
+div.cardOne .icons .icon1,
+div.cardOne .icons .icon2{
+    color: gray;
+    border: 2px solid #eee;
+    border-radius: 50%;
+    padding: 8px 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+}
+
+div.cardOne .icons .icon1:hover,
+div.cardOne .icons .icon2:hover{
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+
+
+div.cardTwo div div:first-of-type{
+    width: 40%;
+}
+div.cardTwo div div:last-of-type{
+    padding: 10px;
+}
+div.cardTwo div div:last-of-type h4{
+    margin-bottom: 10px;
+}
+
+div.cardTwo div div img{
+    width: 100%;
+    height: 100%;
+}
+
+div.cardTwo .card2,
+div.cardTwo .card3{
+    margin: 15px 0;
+}
+
+/* End Cards1 */
+
+/* Start Nav2 */
+
+
+div.nav-mar{
+    margin-top: 100px;
+}
+
+/* End Nav2 */
+
+/* Start Cards2 */
+
+.all .img-body img{
+    height: 100%;
+    width: 150%;
+     
+ }
+ 
+ .all .img-body .head-body{
+     margin-left: 50px;
+     margin-top: 20px;
+     
+ }
+ 
+ .all .img-body .head-body p{
+     margin-top: 10px;
+     color: gray;
+ }
+
+ .all .img1,
+ .all .img2{
+    width: 319px;
+    margin-top: 5px;
+ }
+ 
+ .all .img2{
+     margin-top: 15px;
+ }
+
+/* End Cards2 */
+/* ------------------------------------------------------------------------------------------------ */
+/* Start Aside */
+
+aside.aside{
+    border-left: 2px solid #eee;
+}
+
+.aside .prag-1{
+    color: gray;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.aside-images{
+    width: 35%;
+}
+
+.aside-images img{
+    width: 100%;
+    height: 110%;
+}
+
+.cardside{
+    margin: 8px 0;
+}
+
+.card1 .head{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.last-icons .icon{
+    color: gray;
+    border: 2px solid #eee;
+    border-radius: 50%;
+    padding: 5px 8px;
+    margin-right: 12px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.last-icons .icon:hover{
+    color: blue;
+}
+
+.last-head{
+    width: 120%;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+/* End Aside */
+
+/* Start Details */
+.details{
+    margin-top: 23%;
+}
+
+/* .details .overlay1{
+    padding: 10px 10px;
+    background-color: black;
+} */
+
+.details .sec{
+    position: relative;
+}
+
+.details .sec button{
+    position: absolute;
+    top: 20px;
+    left: 34%;
+    padding: 3px 18px;
+    border: 0;
+    background-color: white;
+    color: blue;
+}
+
+.details .sec button:hover{
+    color: white;
+    background-color: blue;
+    
+}
+
+.details .sec img{
+    width: 90%;
+    height: 100%;
+}
+
+.details .sec h3{
+    position: absolute;
+    top: 70px;
+    color: white;
+    padding: 0 20px;
+}
+.details .sec p{
+    position: absolute;
+    bottom: 25px;
+    padding-left: 100px;
+    color: gray;
+}
+
+/* End Details */
+
+.more{
+    margin-top: 10%;
+}
+
+
+.more .article {
+    width: 60%;
+}
+
+.more .popular{
+    width:35%;
+}
+
+.more .article h3{
+    border-bottom: 2px solid #eee;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.more .popular h3{
+    border-bottom: 2px solid #eee;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.flex .content{
+    margin-left: 20px;
+}
+
+.flex .content h2{
+    margin-top: 20px;
+}
+
+.flex .content p{
+    margin: 20px 0;
+}
+
+.flex .content p,
+.flex .content .fs-11{
+    color: gray;
+}
+
+.content2{
+    position: relative;
+}
+
+.content2 img{
+    width: 100%;
+}
+
+.content2 button{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 3px 18px;
+    border: 0;
+    background-color: white;
+    color: blue;
+}
+
+.content2 button:hover{
+    color: white;
+    background-color: blue;
+}
+
+.content2 .text{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+.text p{
+    margin: 20px 0px;
+}
+
+.text p,
+.text .fs-11{
+    color: gray;
+    padding-bottom: 15px;
+}
+
+.last{
+    margin-left: 45%;
+    border: 1px solid gray;
+    padding: 8px 20px;
+    border-radius: 15px;
+    color: gray;
+}
+
+a:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+.footer{
+    background-color: black;
+    height: 250px;
+}
+
+.footer .world{
+    width: 35%;
+    margin: 55px 60px
+}
+
+.footer .world h1{
+    color: white;
+}
+.footer .world p{
+    margin-top: 50px;
+    color: gray;
+}
+
+
+.footer .all-lists{
+    width: 30%;
+    margin-top: 55px;
+    margin-right: 100px;
+    /* color: gray; */
+}
+
+.footer .all-lists .secone li a:hover,
+.footer .all-lists .sectwo li a:hover{
+    color: blue;
+    background-color: transparent;
+}
+
+.footer .all-lists .sectwo{
+    margin-top: 50px;
+}
+
+.footer .lists li a{
+    color: gray;
+}
+
+.list2 ul{
+    flex-wrap: wrap;
+}
+
+
+.footer .subscribe{
+    width: 33%;
+    margin-top: 4%;
+    margin-right: 40px;
+}
+
+
+
+
+.subscribe h3{
+    color: white;
+    
+}
+
+.subscribe input{
+    margin-top: 43px;
+}
+
+div.input{
+    
+    position: relative;
+
+}
+
+div.input input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid gray;
+    width: 80%;
+    padding: 15px 10px;
+}
+
+.input .rt-icon{
+    position: absolute;
+    right: 90px;
+    bottom: 13px;
+    color: gray;
+}

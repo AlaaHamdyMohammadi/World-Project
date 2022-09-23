@@ -1,0 +1,8 @@
+@media(max-width: 991px){
+    .container .global div{
+        flex-direction: column;
+    }
+    .global section.firstSection{
+        width: 100%;
+    }
+}
